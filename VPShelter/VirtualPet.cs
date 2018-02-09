@@ -14,6 +14,8 @@ namespace VPShelter
         private int thirst;
         private int feeding;
         private int watering;
+        private string name;
+        private string description;
 
 
         //Properties == Mama bear get/set.......get allows us to see the value...set allows us to assign the value...pascal
@@ -37,23 +39,39 @@ namespace VPShelter
             get { return this.watering; }
             set { this.watering = value; }
         }
-
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
+        public string Description
+        {
+            get { return this.description; }
+            set { this.description = value; }
+        }
 
         //Constructors
         public VirtualPet()
         {
 
         }
-        public VirtualPet(int hunger, int thirst, int feeding, int watering)
+        public VirtualPet(int hunger, int thirst, int feeding, int watering, string name, string description)
         {
 
             this.hunger = hunger;
             this.thirst = thirst;
             this.feeding = feeding;
             this.watering = watering;
-
+            this.name = name;
+            this.description = name;
 
         }
+        public VirtualPet(string name, string description)
+        {
+            this.name = name;
+            this.description = description;
+        }
+
         //Methods()
         //at least three
         //one must be tick
