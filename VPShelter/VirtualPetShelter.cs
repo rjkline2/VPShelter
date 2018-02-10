@@ -18,5 +18,10 @@ namespace VPShelter
             get { return petList; }
             set { petList = value; }
         }
+        public List<string> EmpList
+        {
+            get { return empList; }
+            set { empList = value; }
+        }
     }
 }
