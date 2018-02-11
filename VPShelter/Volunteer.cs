@@ -20,13 +20,19 @@ namespace VPShelter
         //overide, feed pets, water pets
         public override bool ClockIn()
         {
-            Console.WriteLine("You are clocked in..");
+            return true;
         }
-       public string FeedPets()
+       public void FeedPets()
         {
             Console.WriteLine("Pets are Fed");
         }
-        public string WaterPets()
+
+        public override bool ShowId()
+        {
+            return true;
+        }
+
+        public void WaterPets()
         {
             Console.WriteLine("Pets are watered");
         }

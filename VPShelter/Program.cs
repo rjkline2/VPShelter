@@ -18,7 +18,7 @@ namespace VPShelter
             //Ask user what action to take
             int userChoice;
 
-            VirtualPet userVirtualPet = new VirtualPet(7, 4, 0, 0);
+            VirtualPet userVirtualPet = new VirtualPet();
 
             do
             {
@@ -132,11 +132,6 @@ namespace VPShelter
                         Console.WriteLine("Press any key to continue.");
                         Console.ReadLine();
                         Console.Clear();
-                        break;
-                    case 3:
-                        Console.WriteLine("The beast is currently:");
-                        Console.WriteLine("Hunger level: " + userVirtualPet.Eat());
-                        Console.WriteLine("Thirst level: " + userVirtualPet.Drink());
                         break;
                     default:
                         break;
