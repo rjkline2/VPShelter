@@ -14,23 +14,27 @@ namespace VPShelter
         //constructors
         //methods
         //adopt a pet
-        public string AdoptPet()
+        public void AdoptPet()
         {
             Console.WriteLine("the Pet is adopted");
         }
-        public string FeedPets()
+        public void FeedPets()
         {
             Console.WriteLine("Pets are Fed");
         }
-        public string WaterPets()
+        public void WaterPets()
         {
             Console.WriteLine("Pets are watered");
         }
         //clockin override?
         public override bool ClockIn()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
+        public override bool ShowId()
+        {
+            return true;
+        }
     }
 }
